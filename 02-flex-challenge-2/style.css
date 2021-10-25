@@ -76,16 +76,17 @@ h1 {
     margin-bottom: 3em;
 }
 
-.first-section {
+.main {
     padding: 100px 0;
     color: #23424a;
 }
 
-.content {
+.primary-content {
     width: 62%;
 }
 
-.content h2 {
+.section-title {
+    font-size: 36px;
     color: #136c72;
 }
 
