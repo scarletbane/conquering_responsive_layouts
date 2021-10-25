@@ -1,18 +1,20 @@
-/* 
+/*
 ////// For this challenge ///////
 
 - All text is in the text.md file
 
 // Requirements
 1. Refer to the design specs for the
-   overall layout 
+   overall layout
 2. The image should line up with
    the sidebar in the section
    below
 
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -41,7 +43,7 @@ h1 {
     /* display: flex => flex container */
     display: flex;
     justify-content: space-between;
-    
+
     /* can't use yet */
     /* gap: 100px; */
 }
@@ -57,11 +59,11 @@ h1 {
 
 .hero {
     padding: 100px 0;
-    background-color: #23424A;
-    color: #FFF;
+    background-color: #23424a;
+    color: #fff;
 }
 
-.hero__text { 
+.hero__text {
     width: 62%;
 }
 
@@ -74,18 +76,46 @@ h1 {
     margin-bottom: 3em;
 }
 
+.first-section {
+    padding: 100px 0;
+    color: #23424a;
+}
+
+.content {
+    width: 62%;
+}
+
+.content h2 {
+    color: #136c72;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #136c72;
+    color: #fff;
+    width: 32%;
+    align-self: flex-start;
+}
+
+.sidebar p {
+    text-align: center;
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
+    text-transform: uppercase;
+    color: #23424a;
     font-weight: 900;
-    background-color: #38CFD9;
-    padding: .75em 2em;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
     border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+    opacity: 0.75;
 }
