@@ -9,7 +9,9 @@
 
 */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -29,23 +31,23 @@ h1 {
 }
 
 .section-title {
-    color: #87629A;
+    color: #87629a;
 }
 
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; 
-    color: #23424A;
+    text-transform: uppercase;
+    color: #23424a;
     font-weight: 900;
-    background-color: #38CFD9;
-    padding: .75em 2em;
+    background-color: #38cfd9;
+    padding: 0.75em 2em;
     border-radius: 100px;
 }
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+    opacity: 0.75;
 }
 
 .container {
@@ -66,8 +68,6 @@ header {
     width: 100%;
 }
 
-
-
 .nav-toggle {
     cursor: pointer;
     border: 0;
@@ -75,17 +75,17 @@ header {
     height: 3em;
     padding: 0em;
     border-radius: 50%;
-    background: #072A2D;
+    background: #072a2d;
     color: white;
     transition: opacity 250ms ease;
-    
+
     position: absolute;
     left: 0;
 }
 
 .nav-toggle:focus,
 .nav-toggle:hover {
-    opacity: .75;
+    opacity: 0.75;
 }
 
 .hamburger {
@@ -118,7 +118,7 @@ header {
 
 /* made changes here from video
    to make it more accessible.
-   
+
    Works the same :) */
 .nav {
     visibility: hidden;
@@ -130,24 +130,21 @@ header {
     visibility: visible;
     height: auto;
     position: relative;
-} 
-
+}
 
 .logo {
     height: 30px;
 }
 
-
 .hero {
     padding: 100px 0;
-    background-color: #23424A;
-    color: #FFF;
+    background-color: #23424a;
+    color: #fff;
 }
 
 .hero__img {
     margin-top: 2em;
 }
-
 
 .hero p {
     margin-bottom: 3em;
@@ -157,20 +154,14 @@ header {
     margin-top: 3em;
 }
 
-
 .sidebar {
     padding: 1em;
     text-align: center;
     color: #fff;
     background-color: #136c72;
-
 }
 
-
-
 @media (min-width: 800px) {
-
-    
     .nav-toggle {
         display: none;
     }
@@ -184,19 +175,18 @@ header {
     .row {
         display: flex;
         justify-content: space-between;
-
     }
 
     .hero__text {
         width: 62%;
     }
-    
+
     .hero__img {
         width: 32%;
         align-self: flex-start;
         margin: 0;
     }
-    
+
     .primary-content {
         width: 62%;
     }
@@ -204,6 +194,4 @@ header {
     .sidebar {
         width: 32%;
     }
-    
-    
 }
