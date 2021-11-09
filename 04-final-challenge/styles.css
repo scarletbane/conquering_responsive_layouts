@@ -1,0 +1,173 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    opacity: 0.85;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Properties */
+
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+
+:root {
+    /* Colors */
+    --clr-primary: #a59678;
+    --clr-white: #ffffff;
+    --clr-grey: #6f737f;
+    --clr-dark: #3b4050;
+    --clr-black: #2e323f;
+
+    /* Fonts */
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-oswald: 'Oswald', sans-serif;
+
+    /* Breakpoints */
+    --bp-small: 700px;
+    --bp-medium: 1000px;
+
+    /* Other */
+    --max-container-width: 1200px;
+}
+
+/* CSS */
+
+body {
+    font-family: var(--ff-montserrat);
+}
+
+.container {
+    width: 80%;
+    max-width: var(--max-container-width);
+    margin-inline: auto;
+    position: relative;
+}
+
+header {
+    padding-block: 1em;
+    text-align: center;
+}
+
+.nav {
+    display: none;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    display: block;
+    height: auto;
+    position: relative;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    color: white;
+    transition: opacity 250ms ease;
+
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: 0.75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin-block: auto;
+    height: 3px;
+    background: var(--clr-white);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* Utility Classes */
+.text-primary {
+    color: var(--clr-primary);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+.text-grey {
+    color: var(--clr-grey);
+}
+
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.text-black {
+    color: var(--clr-black);
+}
+
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.bg-grey {
+    background-color: var(--clr-grey);
+}
+
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-black {
+    background-color: var(--clr-black);
+}
