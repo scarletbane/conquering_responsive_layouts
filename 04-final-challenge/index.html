@@ -14,7 +14,7 @@
         <script type="text/javascript" src="main.js" defer></script>
         <title>Final Challenge</title>
     </head>
-    <body>
+    <body class="ff--primary">
         <header class="header bg-black">
             <div class="container row">
                 <button class="nav-toggle" aria-label="nav-toggle">
@@ -23,24 +23,33 @@
                 <a href="#" class="logo">
                     <img src="img/logo.svg" alt="logo" />
                 </a>
-                <nav class="nav">
+                <nav class="nav ff--secondary fs--xs">
                     <ul class="nav__list nav__list--primary">
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Home</a>
+                            <a href="#" class="nav__link text-white">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
+                            <a href="#" class="nav__link text-white">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Contact</a>
+                            <a href="#" class="nav__link text-white">Contact</a>
                         </li>
                     </ul>
                     <ul class="nav__list nav__list--secondary">
                         <li class="nav__item">
-                            <a href="#" class="nav__link"> Sign In </a>
+                            <a href="#" class="nav__link text-white">
+                                Sign In
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--button">
+                            <a
+                                href="#"
+                                class="
+                                    nav__link nav__link--button
+                                    bg-primary
+                                    text-white
+                                "
+                            >
                                 Sign Up
                             </a>
                         </li>
@@ -49,23 +58,35 @@
             </div>
         </header>
 
-        <section class="intro">
+        <section class="intro bg-dark">
             <div class="container row">
                 <div class="col">
-                    <h1 class="intro__title">
+                    <h1 class="intro__title ff--secondary fs--2xl text-white">
                         Responsive layouts
-                        <span class="text--primary">
+                        <span class="text-primary">
                             don't have to be a struggle
                         </span>
                     </h1>
                 </div>
                 <div class="col">
-                    <p class="intro__text">
-                        Lorem ipsum dolor sit amet, consectetur 3 adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua.
+                    <p class="intro__text fs--md text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
                     </p>
-                    <a href="#" class="btn btn--primary"> I want to learn </a>
+                    <a
+                        href="#"
+                        class="
+                            nav__link--button
+                            button
+                            ff--secondary
+                            fs--md
+                            bg-primary
+                            text-white
+                        "
+                    >
+                        I want to learn
+                    </a>
                 </div>
             </div>
         </section>
@@ -73,24 +94,51 @@
         <section class="description">
             <div class="container row">
                 <div class="col">
-                    <h2 class="description__title">Mobile-first</h2>
-                    <p class="description__text">
+                    <h2
+                        class="
+                            description__title
+                            text-primary
+                            ff--secondary
+                            fs--lg
+                        "
+                    >
+                        Mobile-first
+                    </h2>
+                    <p class="description__text text-grey ff--primary fs--xs">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="col">
-                    <h2 class="description__title">Efficient</h2>
-                    <p class="description__text">
+                    <h2
+                        class="
+                            description__title
+                            text-primary
+                            ff--secondary
+                            fs--lg
+                        "
+                    >
+                        Efficient
+                    </h2>
+                    <p class="description__text text-grey ff--primary fs--xs">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam.
                     </p>
                 </div>
                 <div class="col">
-                    <h2 class="description__title">Done Right</h2>
-                    <p class="description__text">
+                    <h2
+                        class="
+                            description__title
+                            text-primary
+                            ff--secondary
+                            fs--lg
+                        "
+                    >
+                        Done Right
+                    </h2>
+                    <p class="description__text text-grey ff--primary fs--xs">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam.
@@ -99,11 +147,13 @@
             </div>
         </section>
 
-        <section class="details">
+        <section class="detail">
             <div class="container row">
                 <div class="col">
-                    <h2 class="details__title">It doesn't have to be header</h2>
-                    <p class="details__text">
+                    <h2 class="detail__title text-primary ff--secondary fs--xl">
+                        It doesn't have to be hard
+                    </h2>
+                    <p class="detail__text text-dark ff--primary fs--sm">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor
@@ -114,9 +164,9 @@
                     <img
                         src="img/the-image.jpg"
                         alt="details image"
-                        class="details__img"
+                        class="detail__img"
                     />
-                    <p class="details__text">
+                    <p class="detail__text text-dark ff--primary fs--sm">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor
@@ -126,26 +176,30 @@
                     </p>
                 </div>
                 <div class="col">
-                    <div class="details__sidebar">
-                        <div class="card">
-                            <h3 class="card__title">Break it down</h3>
-                            <p class="card__text">
+                    <div class="detail__sidebar">
+                        <div class="card bg-dark text-white">
+                            <h3 class="card__title ff--secondary fs--lg">
+                                Break it down
+                            </h3>
+                            <p class="card__text ff--primary fs--xs">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
-                        <div class="card">
-                            <h3 class="card__title">Work your way up</h3>
-                            <p class="card__text">
+                        <div class="card bg-dark text-white">
+                            <h3 class="card__title ff--secondary fs--lg">
+                                Work your way up
+                            </h3>
+                            <p class="card__text ff--primary fs--xs">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
                             </p>
                         </div>
-                        <div class="card">
-                            <h3 class="card__title"></h3>
-                            <p class="card__text">
+                        <div class="card bg-dark text-white">
+                            <h3 class="card__title ff--secondary fs--lg"></h3>
+                            <p class="card__text ff--primary fs--xs">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.
@@ -155,69 +209,220 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container row">
-                <div class="col">
-                    <h2 class="footer_title">About our company</h2>
-                    <p class="footer__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam.
-                    </p>
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2
+                            class="
+                                footer__title
+                                text-white
+                                ff--secondary
+                                fs--md
+                            "
+                        >
+                            just scratching the surface
+                        </h2>
+                    </div>
                 </div>
-                <div class="col">
-                    <h2 class="footer_title">Getting around</h2>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Home</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">About</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col">
-                    <h2 class="footer_title">Other things</h2>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Lorem ipsum</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">dolor</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">sit amet</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">consectetur</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col">
-                    <h2 class="footer_title">And more</h2>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">Lorem ipsum</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">dolor</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">sit amet</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">consectetur</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="row">
+                    <div class="col">
+                        <h3
+                            class="
+                                footer_subtitle
+                                text-primary
+                                ff--secondary
+                                fs--xs
+                            "
+                        >
+                            About our company
+                        </h3>
+                        <p class="footer__text text-grey ff--primary fs--2xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h3
+                            class="
+                                footer_subtitle
+                                text-primary
+                                ff--secondary
+                                fs--xs
+                            "
+                        >
+                            Getting around
+                        </h3>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h3
+                            class="
+                                footer_subtitle
+                                text-primary
+                                ff--secondary
+                                fs--xs
+                            "
+                        >
+                            Other things
+                        </h3>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >Lorem ipsum</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >dolor</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >sit amet</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >consectetur</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h3
+                            class="
+                                footer_subtitle
+                                text-primary
+                                ff--secondary
+                                fs--xs
+                            "
+                        >
+                            And more
+                        </h3>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >Lorem ipsum</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >dolor</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >sit amet</a
+                                    >
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a
+                                        href="#"
+                                        class="
+                                            footer-nav__link
+                                            text-grey
+                                            ff--primary
+                                            fs--2xs
+                                        "
+                                        >consectetur</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </footer>
